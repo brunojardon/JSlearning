@@ -1,0 +1,10 @@
+9.Escribe un programa que pida una frase y escriba cuantas veces aparece la letra a. <br>
+<script>
+    var frase = prompt("Ingrese una frase:"), lfrase = parseInt(frase.length), a=0;
+    for(i=0; i<=lfrase; i++){
+        if (frase.substr(i,1) == "a"){
+            a++;
+        }
+    }
+    document.write("Aparece " + a + " veces la letra A");
+</script>

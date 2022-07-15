@@ -1,12 +1,14 @@
 7.Escribe un programa que pida 3 números y escriba en la pantalla el mayor de los tres. <br>
 <script>
     var valor1 = parseFloat(prompt("Ingrese un valor:")), valor2 = parseFloat(prompt("Ingrese otro valor:")), valor3 = parseFloat(prompt("Ingrese un ultimo valor:"));
-    
-    comp(valor1, valor2);
-
-    function comp(num1, num2){
-        if (num1>num2) {
-            document.write("");
-        } 
+    if (valor1>valor2 && valor1>valor3) {
+        document.write("El mayor es: " + valor1);
+    }else if(valor2>valor1 && valor2>valor3){
+        document.write("El mayor es: " + valor2);
+    }else{
+        document.write("El mayor es: " + valor3);
+    }
+    if (valor1==valor2 && valor2==valor3 ) {
+        document.write("<br>Los valores introducidos son identicos.");
     }
 </script>

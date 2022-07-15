@@ -1,0 +1,9 @@
+10.Escribe un programa que pida una frase y escriba las vocales que aparecen. <br>
+<script>
+    var frase = prompt("Inserte una frase:"), lfrase = frase.length;
+    for(i=0; i<lfrase; i++){
+        if(frase.substr(i,1)=="a" || frase.substr(i,1)=="e" || frase.substr(i,1)=="i" || frase.substr(i,1)=="o" || frase.substr(i,1)=="u"){
+            document.write(frase.substr(i,1));
+        }
+    }
+</script>
