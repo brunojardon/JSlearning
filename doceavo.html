@@ -1,7 +1,16 @@
 12.Escribe un programa que pida una frase y escriba cuántas veces aparecen cada una de las vocales <br>
 <script>
-    var frase = prompt("Inserte una frase:"), lfrase = frase.length;
-    for(i=0; i<=lfrase; i++){
-        
+    const frase = prompt("Inserte una frase:");
+    const lfrase = frase.length;
+    let vocal = [a=0, e=0, i=0, o=0, u=0];
+
+    for(y=0; y<lfrase; y++){
+        if(frase[y]=="a"){vocal[0]++}
+        else if (frase[y]=="e"){vocal[1]++}
+        else if (frase[y]=="i"){vocal[2]++}
+        else if (frase[y]=="o"){vocal[3]++}
+        else if (frase[y]=="u"){vocal[4]++}
     }
+    
+    document.write("La vocal A se escribe " + vocal[0] + " veces, la vocal E se escribe " + vocal[1] + " veces, la vocal I se escribe " + vocal[2] + " veces, la vocal O se escribe " + vocal[3] + " veces, la vocal U se escribe " + vocal[4] + " veces.")
 </script>

@@ -1,0 +1,14 @@
+14.Añadir al ejercicio anterior que nos diga por cual de los cuatro es divisible (hay que decir todos por los que es divisible) <br>
+<script>
+    let valor = parseFloat(prompt("Ingrese un valor"));
+
+    if (valor%2==0){
+        document.write("Es divisible por 2. <br>")
+    } if (valor%3==0) {
+        document.write("Es divisible por 3. <br>")
+    } if (valor%5==0) {
+        document.write("Es divisible por 5. <br>")
+    } if (valor%7==0){
+        document.write("Es divisible por 7. <br>")
+    } if (valor%2!=0 && valor%3!=0 && valor%5!=0 && valor%7!=0) {document.write("El valor no es divisible por 2, 3, 5 o 7.")}
+</script>

@@ -1,0 +1,12 @@
+16.Escribir un programa que escriba en pantalla los divisores comunes de dos números dados. <br>
+<script>
+    let valora = parseFloat(prompt("Introduzca un valor: ")), valorb =  parseFloat(prompt("Introduzca otro valor: ")), divisores=0;
+    document.write("El valor introducido es divisible por: <br>");
+    for(y=2; y<=10; y++){
+        if(valora%y==0 && valorb%y==0){
+            divisores++;
+            document.write(y + "<br>");
+        }
+    }
+    if(divisores==0){document.write("El numero no es divisible.")}
+</script>

@@ -1,0 +1,12 @@
+15.Escribir un programa que escriba en pantalla los divisores de un número dado. <br>
+<script>
+    let valor = parseFloat(prompt("Introduzca un valor: ")), divisores=0;
+    document.write("El valor introducido es divisible por: <br>");
+    for(y=2; y<=10000; y++){
+        if(valor%y==0){
+            divisores++;
+            document.write(y + "<br>");
+        }
+    }
+    if(divisores==0){document.write("El numero no es divisible.")}
+</script>
